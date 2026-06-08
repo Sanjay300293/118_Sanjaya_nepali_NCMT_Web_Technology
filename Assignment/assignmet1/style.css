@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Container */
+main {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+article {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: #0077cc;
+}
+
+/* Image */
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #555;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #631741;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #b71b1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background: #3f0c26;
+}
+
+/* Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    article {
+        padding: 35px;
+    }
+}

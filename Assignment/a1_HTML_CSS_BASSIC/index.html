@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <main>
+        <article>
+
+            <figure>
+                <img src="communication.jpg"
+                     alt="Students filling out an online registration form">
+                <figcaption>Complete your registration below.</figcaption>
+            </figure>
+
+            <form>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your username" id="username" required>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" id="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" id="password" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+
+                <label for="phone">Phone Number </label>
+                <input type="number"
+                       id="phone"
+                       pattern="^[0-9]{9}$"
+                       required
+                       placeholder="123456789">
+                <input type="range" 
+                       id="experience" 
+                       min="0" 
+                       max="100">
+                <input type="color" required>
+                <button type="submit">Submit</button>
+            </form>
+
+        </article>
+    </main>
+
+</body>
+</html>
